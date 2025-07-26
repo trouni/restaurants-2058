@@ -70,3 +70,4 @@ gem "font-awesome-sass", "~> 6.1"
 gem 'ostruct'
 gem "sassc-rails"
 gem "simple_form"
+gem "devise"

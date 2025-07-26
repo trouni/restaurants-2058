@@ -9,6 +9,10 @@
 <p class="fw-lighter opacity-75">
   <i class="fas fa-utensils"></i><span class='ms-2'><%= @restaurant.category %></span>
 </p>
+<p class="fw-lighter">
+  <i class="fas fa-user"></i><span class='ms-2'><%= @restaurant.user.username %></span>
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{@restaurant.user.username}", class: "avatar", style: "width:40px; height:40px; border-radius:50%; object-fit:cover; border:2px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.15);" %>
+</p>
 <div class="d-flex">
   <!-- edit and delete here-->
   <p>
