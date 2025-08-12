@@ -1,0 +1,10 @@
+200 - OK
+
+# user messed up
+401 - not authorized (i know you, but you cant do that)
+403 - not authenticated ( i dont konw who you are)
+404 - Not found
+422 - Unprocessable entity -> you tried to create something, but it didnt work
+
+# dev messed up
+500 - server error
