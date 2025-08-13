@@ -1,4 +1,15 @@
 class RestaurantsController < ApplicationController
+  # '/restaurants/top'
+  def top
+    @restaurants = Restaurant.where(rating: 5)
+  end
+
+  # '/restaurants/52/chef'
+  def chef
+    @restaurant = Restaurant.find(params[:id])
+    # @chef_name = @restaurant.chef_name
+  end
+
   # '/restaurants'
   def index
     @restaurants = Restaurant.all
@@ -56,6 +67,6 @@ class RestaurantsController < ApplicationController
   private
 
   def restaurant_params
-    params.require(:restaurant).permit(:rating, :name, :address)
+    params.require(:restaurant).permit(:rating, :name, :address, :category)
   end
 end
